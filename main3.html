@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joystick Fill with Slider</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    canvas {
+      border: 1px  black;
+    }
+    .slider-container {
+      margin-top: 20px;
+      width: 400px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="animationCanvas" width="400" height="400"></canvas>
+  <div class="slider-container">
+    <span>0%</span>
+    <input type="range" id="fillSlider" min="0" max="100" value="0">
+    <span>100%</span>
+  </div>
+  <script src="../js/main3.js"></script>
+</body>
+</html>
